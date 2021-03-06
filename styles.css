@@ -38,3 +38,9 @@ input[type=text] {
     border-right: 0.5px solid #DCDCDC;
     border-left: 0.5px solid #DCDCDC;
   }
+
+  .show-container {
+    border: 0.5px solid #DCDCDC;
+    width: 50vw;
+    height: 50vh;
+  }
