@@ -19,7 +19,7 @@
         <div style="padding-bottom: 20vh;" class=""><input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search"></div>
         <div style="height: 40vh; width: 60vw;" class="list-border">
             <ul style="list-style: none;" id="suggestions">
-                <li>
+                <li onclick="send('pdf');">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc;" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">DOWNLOAD</p>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li onclick="send('html');">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li onclick="send('json');">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
@@ -61,6 +61,10 @@
                     li[i].style.display = "none";
                 }
             }
+        }
+
+        function send(dest) {
+            location.href = "https://www.apuem.com/" + dest;
         }
     </script>
 </body>
