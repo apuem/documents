@@ -21,12 +21,41 @@
 </head>
 <body>
     <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
-    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;" href="../"><-BACK</a>
-    <div style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
-        <h1 class="m-5">.json</h1>
-        <div class="show-container p-3" style="">
-            <pre class="user-select-all">Lorem <span style="color: blueviolet;">ipsum</span> <br> dolor</pre>
-        </div>
+    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer;" onclick="openNav()">ADVANCED</a>
+    <div id="sideNav" style="height: 100%; width: 0px; position: fixed; border: 0.5px solid #DCDCDC; z-index: 1; transition: 0.5s; background-color: #F5F5F5; overflow-x: hidden; right: 0px;">
+        <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer" onclick="closeNav()">CLOSE</a>
+        <h2 class="p-5">Hey</h2>
     </div>
+    <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="m-5">.json</h1>
+        <div id="content" onmouseleave="resetCopyNote()" onclick="copyDivToClipboard()" class="show-container copyContainer p-3" style="overflow-y: scroll;">
+            <pre>Lorem <span style="color: blueviolet;">ipsum</span> <br> dolor</pre>
+        </div>
+        <p id="copyNote" class="hide" style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;">CLICK TO COPY TO CLICKBOARD</p>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "50vw";
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+        }
+        document.getElementById('main').addEventListener('click', closeNav);
+
+        function copyDivToClipboard() {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("content"));
+            window.getSelection().removeAllRanges(); // clear current selection
+            window.getSelection().addRange(range); // to select text
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();// to deselect
+            document.getElementById("copyNote").style.color = "green";
+            document.getElementById("copyNote").innerHTML = "COPIED!";
+                }
+        function resetCopyNote() {
+            document.getElementById("copyNote").style.color = "#111111";
+            document.getElementById("copyNote").innerHTML = "CLICK TO COPY TO CLICKBOARD";
+        }
+        </script>
 </body>
 </html>

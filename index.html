@@ -24,8 +24,12 @@
     <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com/more">MORE</a>
     <div style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
         <div style="padding-top: 10vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div>
-        <div style="padding-bottom: 20vh;" class=""><input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search"></div>
-        <div style="height: 40vh; width: 60vw;" class="list-border">
+        <div style="padding-bottom: 20vh;">
+            <form autocomplete="off">
+                <input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search (file extension)">
+            </form>
+        </div>
+        <div style="height: 40vh; width: 60vw; overflow-y: scroll;" class="list-border">
             <ul style="list-style: none;" id="suggestions">
                 <li onclick="send('download/docx');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc;" class="hover p-2 d-flex flex-column justify-content-center">
@@ -51,9 +55,52 @@
                         </div>
                     </div>
                 </li>
+                <li onclick="send('json');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('json');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('json');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('json');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('json');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.yaml</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
+    <!-- <div class="d-flex flex-column justify-content-center align-items-center pt-5">
+        <p class="text-secondary" style="font-weight: 400; font-size: 0.75em;">COPYRIGHT &#169; 2021 APUEM. ALL RIGHTS RESERVED. | <a>IMPRINT</a> |</p> 
+    </div> -->
     <script>
         function searching() {
             var input, autocomplete, ul, li, a, i;

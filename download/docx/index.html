@@ -21,12 +21,17 @@
 </head>
 <body>
     <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
-    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;" href="../"><-BACK</a>
+    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;" href="../../"><-BACK</a>
     <div style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
         <h1 class="m-5">.docx for download</h1>
-        <div class="show-container p-3">
-           <a href="../../files/docx/example.docx" download="example">DOWNLOAD</a>
+        <div class="show-container d-flex flex-column justify-content-center align-items-center">
+            <h2 class="p-5" style="text-align: center;">Your <span class="text-secondary">.docx</span> file should download now. If not please click the link below to download it manually.</h2>
+            <div>
+                <img src="../../images/download.svg" style="width: 1vw;" class="img-fluid" alt="download">
+                <a href="../../files/docx/example.docx" download="example">example.docx</a>
+            </div>
         </div>
     </div>
+    <script>document.location.href = '../../files/docx/example.docx';</script>
 </body>
 </html>

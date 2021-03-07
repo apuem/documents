@@ -1,14 +1,18 @@
 body {
     background-color: #F5F5F5 !important;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', sans-serif !important;
 }
 
 p {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', sans-serif !important;
 }
 
 h1 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
+a {
+  font-family: 'Space Grotesk', sans-serif !important;
 }
 
 input[type=text] {
@@ -24,6 +28,14 @@ input[type=text] {
     border-radius: 8px;
     color: #111111;
     background-color: #F5F5F5;
+    font-family: 'Space Grotesk', sans-serif !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    input[type=text] {
+    width: 80vw !important;
+    height: 7.5vh !important;
+  }
   }
   
   input[type=text]:focus {
@@ -47,4 +59,12 @@ input[type=text] {
     border: 0.5px solid #DCDCDC;
     width: 50vw;
     height: 50vh;
+  }
+
+  .copyContainer:hover + .hide {
+    display: block;
+  }
+
+  .hide {
+    display: none;
   }
