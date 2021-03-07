@@ -7,6 +7,10 @@ p {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 input[type=text] {
     padding: 12px 20px;
     width: 30vw;
