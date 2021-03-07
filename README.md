@@ -24,3 +24,11 @@
 - JS
 - DOCX
 - EXCEL
+- TXT
+- RTF
+
+---
+
+- PNG
+- MP3
+- MP4
