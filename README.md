@@ -5,10 +5,14 @@
 - DATA POLICY
 - HOW IT WORKS
 
+---
+
 - Advanced -> title.../ not empty
 - Information
 - How to open
 - Copy button
+
+---
 
 - JSON
 - HTML
