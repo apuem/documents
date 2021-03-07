@@ -11,6 +11,7 @@
 - Information
 - How to open
 - Copy button
+- Name File
 
 ---
 
@@ -23,4 +24,17 @@
 - JS
 - DOCX
 - EXCEL
-- 
+- TXT
+- RTF
+
+---
+
+- PNG
+- MP3
+- MP4
+
+---
+
+- Favicon
+- Lorem Ipsum Generator
+- Picture in size customizeble
