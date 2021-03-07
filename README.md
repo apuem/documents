@@ -32,3 +32,9 @@
 - PNG
 - MP3
 - MP4
+
+---
+
+- Favicon
+- Lorem Ipsum Generator
+- Picture in size customizeble
