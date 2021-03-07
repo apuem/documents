@@ -68,3 +68,19 @@ input[type=text] {
   .hide {
     display: none;
   }
+
+  .jname {
+    color: blue;
+  }
+
+  .jvalue {
+    color: red;
+  }
+
+  .jbvalue {
+    color: darkblue;
+  }
+
+  .jivalue {
+    color: green;
+  }
