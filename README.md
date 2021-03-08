@@ -12,6 +12,7 @@
 - download file
 - File Template
 - file example
+- file syntax
 
 ---
 
