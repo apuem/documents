@@ -102,6 +102,14 @@ input[type=text] {
     color: #4e90c9;
   }
 
+  .hlightblue {
+    color: #99dbff;
+  }
+
+  .horange {
+    color: #cb8e74;
+  }
+
   .closing:hover {
     cursor: url("images/close.svg"), auto !important;
   }
