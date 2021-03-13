@@ -3,7 +3,7 @@
 ## Apuem - Documents
 ### The File Launcher.
 
-To start a file
+To start a .json file. 
 
 ---
 
