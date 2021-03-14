@@ -3,7 +3,8 @@
 ## Apuem - Documents
 ### The File Launcher.
 
-To start a .json file. 
+To start a .json file.
+With apuem you can quickly start a file, even if you can not remember the syntax of the file type. Open your JSON file now and copy it with one click or download a ready to go document. It is an empty example file that can be used as template to build something great fith it.
 
 ---
 
