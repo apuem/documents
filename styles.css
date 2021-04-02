@@ -37,6 +37,12 @@ input[type=text] {
     width: 80vw !important;
     height: 7.5vh !important;
   }
+    .show-container {
+      width: 80vw !important;
+    }
+    .list-border {
+      width: 80vw !important;
+    }
   }
   
   input[type=text]:focus {
