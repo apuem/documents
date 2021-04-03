@@ -116,6 +116,14 @@ input[type=text] {
     color: #cb8e74;
   }
 
+  .jyellow {
+    color: rgb(217,217,168);
+  }
+
+  .jgreen {
+    color: rgb(77,197,172);
+  }
+
   .closing:hover {
     cursor: url("images/close.svg"), auto !important;
   }
